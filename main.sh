@@ -5,8 +5,11 @@ SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 #link global_variables 
 source $SCRIPTPATH/scripts/global_variables
 
-# Set the message text
+#Get the IP
 IP=$(hostname -I | cut -d ' ' -f 1)
 
+#Create the content of the message
+MESSAGE=$"$HOSTNAME is online $IP"
+
 # Use the curl command to send the message
-curl -s -X POST https://api.telegram.org/bot$API_TOKEN/sendMessage -d chat_id=$CHAT_ID -d text="$HOSTNAME is online $IP"
+curl -s -X POST https://api.telegram.org/bot$API_TOKEN/sendMessage -d chat_id=$CHAT_ID -d text="$MESSAGE"
