@@ -1,5 +1,9 @@
 #!/bin/bash
-source scripts/global_variables
+#get the path of the main script
+SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+
+#link global_variables 
+source $SCRIPTPATH/scripts/global_variables
 
 # Set the message text
 IP=$(hostname -I | cut -d ' ' -f 1)
