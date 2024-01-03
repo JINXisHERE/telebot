@@ -42,6 +42,7 @@ if you don#t have the rc.local file on your device the use the following command
 ```
 sudo nano /etc/systemd/system/rc-local.service
 ```
+copy the following content into the editore
 ```
 [Unit]
  Description=/etc/rc.local Compatibility
