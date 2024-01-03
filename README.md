@@ -12,6 +12,8 @@ apt install telegram-cli
 
 just clone the repo into your desuret destination, /opt/ is recomended
 
-
+```
+git clone https://github.com/JINXisHERE/telebot.git
+```
 
 ## Usage
