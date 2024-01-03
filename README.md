@@ -38,4 +38,4 @@ If you want to run main.sh on startup you can add the path to the script into rc
 sudo nano /etc/rz.local
 ```
 
-NOTE: if you don#t have the rc.local file on your device, run ./setup-rc-local.sh and it will be created
+NOTE: if you don#t have the rc.local file on your device, run ./setup-rc-local.sh that is located in the scripts folder and it will be created.
