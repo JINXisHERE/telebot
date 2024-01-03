@@ -8,5 +8,10 @@ one requierment is the telegram cli
 ```bash
 apt install telegram-cli
 ```
+##Installation
+
+just clone the repo into your desuret destination, /opt/ is recomended
+
+
 
 ## Usage

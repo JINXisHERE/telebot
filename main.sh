@@ -1,5 +1,5 @@
 #!/bin/bash
-sorce /scripts/global_variables
+source /scripts/global_variables
 
 # Set the message text
 IP=$(hostname -I | cut -d ' ' -f 1)
